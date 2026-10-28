@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRONOS URBAN | Portal Oficial & Moda Urbana Contemporánea en Colombia</title>
+  <meta name="description" content="Sitio oficial de KRONOS URBAN (NIT 890201988-3). Entidad registrada ante la Cámara de Comercio de Bucaramanga (Registro No. 05-500460-21). Confección y diseño de vestuario urbano contemporáneo en San Gil, Santander.">
+  <link rel="canonical" href="https://kronosurban.site">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KRONOS URBAN | Portal Corporativo Oficial">
+  <meta property="og:description" content="Portal oficial de KRONOS URBAN (NIT 890201988-3). Vanguardia, diseño y estilo atemporal en Colombia.">
+  <meta property="og:url" content="https://kronosurban.site">
+  <meta property="og:site_name" content="KRONOS URBAN">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:image" content="https://kronosurban.site/assets/hero-corporate.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo-brand.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #07080b;
+      --bg-card: #0d0f15;
+      --bg-surface: #131620;
+      --primary-amber: #f59e0b;
+      --primary-amber-hover: #d97706;
+      --accent-gold: #fbbf24;
+      --accent-titanium: #e2e8f0;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --border-subtle: #1e2230;
+      --border-accent: rgba(245, 158, 11, 0.4);
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --container-max: 1200px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .brand-font {
+      font-family: var(--font-heading);
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Top Official Verification Bar */
+    .top-legal-bar {
+      background: #030406;
+      color: #94a3b8;
+      font-size: 0.76rem;
+      text-align: center;
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid #141722;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .top-legal-bar strong {
+      color: #fff;
+    }
+    .top-legal-bar .dot {
+      color: var(--primary-amber);
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 8, 11, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.85rem 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.03em;
+      font-family: var(--font-heading);
+    }
+    .brand-logo img {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+    .brand-logo span {
+      color: var(--primary-amber);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .btn-contact-nav {
+      background: var(--primary-amber);
+      color: #000;
+      padding: 0.65rem 1.35rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      transition: background 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-contact-nav:hover {
+      background: var(--primary-amber-hover);
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 4.5rem 0 5rem;
+      background: radial-gradient(circle at 50% 15%, rgba(245, 158, 11, 0.1) 0%, rgba(7, 8, 11, 0) 70%);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 3.5rem;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      padding: 0.35rem 0.95rem;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+    .hero-title {
+      font-size: 3.1rem;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 1.25rem;
+    }
+    .hero-title .highlight {
+      color: var(--primary-amber);
+    }
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin-bottom: 2rem;
+      line-height: 1.65;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .btn-primary {
+      background: var(--primary-amber);
+      color: #000;
+      padding: 0.95rem 1.85rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: all 0.2s;
+    }
+    .btn-primary:hover {
+      background: var(--primary-amber-hover);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 1px solid var(--border-subtle);
+      padding: 0.95rem 1.6rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-credentials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .credential-item h4 {
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+    .credential-item p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card-img {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+    }
+    .hero-card-img img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+    }
+
+    /* Section Global Styles */
+    section {
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3.5rem;
+    }
+    .section-subtitle {
+      color: var(--primary-amber);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      color: #fff;
+      line-height: 1.2;
+    }
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.85rem;
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .about-pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .pillar-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+    .pillar-box h4 {
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+    .pillar-box p {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      margin-bottom: 0;
+    }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+    }
+    .feature-icon-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--primary-amber);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature-card h3 {
+      font-size: 1.15rem;
+      color: #fff;
+    }
+    .feature-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Legal Verification Card */
+    .section-legal-card {
+      background: #0a0d14;
+      border: 1px solid #1c2130;
+      border-radius: 18px;
+      padding: 3rem 2.5rem;
+      margin: 4rem auto;
+      max-width: var(--container-max);
+    }
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .legal-badge {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 0.85rem;
+    }
+    .legal-data-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .data-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .data-item .label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .data-item .value {
+      font-size: 0.92rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Contact Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      padding: 2.25rem;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.35rem;
+    }
+    .contact-info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .contact-icon {
+      font-size: 1.3rem;
+      color: var(--primary-amber);
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #030406;
+      padding: 4.5rem 0 2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-col h5 {
+      color: #fff;
+      font-size: 0.95rem;
+      margin-bottom: 1.15rem;
+      letter-spacing: 0.05em;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .footer-links a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      border-top: 1px solid #141722;
+      padding-top: 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #25d366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      z-index: 90;
+      transition: all 0.25s ease;
+    }
+    .floating-wa-btn:hover {
+      transform: scale(1.08) translateY(-3px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .legal-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .hero-title { font-size: 2.2rem; }
+      .hero-credentials { grid-template-columns: 1fr; }
+      .legal-data-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Legal & Verification Bar -->
+  <div class="top-legal-bar">
+    <span>🛡️ <strong>Razón Social Oficial:</strong> KRONOS URBAN</span>
+    <span class="dot">·</span>
+    <span>NIT: <strong>890201988-3</strong></span>
+    <span class="dot">·</span>
+    <span>Registro No. 05-500460-21 · Cámara de Comercio de Bucaramanga</span>
+    <span class="dot">·</span>
+    <span>Sede: San Gil - Santander, Colombia</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="brand-logo">
+        <img src="assets/logo-brand.jpg" alt="Logo Oficial KRONOS URBAN">
+        <div>KRONOS<span>URBAN</span></div>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#marca">Nuestra Marca</a>
+        <a href="#confeccion">Ingeniería Textil</a>
+        <a href="#pilares">Pilares</a>
+        <a href="#respaldo">Respaldo Legal</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="https://wa.me/573108240597?text=Hola%20KRONOS%20URBAN,%20deseo%20comunicarme%20con%20atenci%C3%B3n%20al%20cliente." class="btn-contact-nav" target="_blank" rel="noopener noreferrer">
+        💬 Contacto Directo
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          ⚡ Marca Registrada de Moda Urbana Contemporánea · Colombia
+        </div>
+        <h1 class="hero-title">
+          KRONOS URBAN:<br>
+          VANGUARDIA, DISEÑO Y <span class="highlight">ESTILO ATEMPORAL</span>.
+        </h1>
+        <p class="hero-desc">
+          En <strong>KRONOS URBAN</strong> concebimos piezas de moda urbana con siluetas estructuradas, tejidos técnicos de alto gramaje y terminaciones de precisión arquitectónica, fusionando la fuerza de la cultura urbana con el rigor de la confección colombiana.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#marca" class="btn-primary">
+            Conocer Nuestra Marca
+          </a>
+          <a href="#respaldo" class="btn-secondary">
+            Ver Respaldo Mercantil
+          </a>
+        </div>
+
+        <div class="hero-credentials">
+          <div class="credential-item">
+            <h4>Registro Oficial</h4>
+            <p>Inscrita y activa ante la Cámara de Comercio de Bucaramanga.</p>
+          </div>
+          <div class="credential-item">
+            <h4>Ingeniería Textil</h4>
+            <p>Confección de alta densidad y durabilidad estructural.</p>
+          </div>
+          <div class="credential-item">
+            <h4>Transparencia y Ética</h4>
+            <p>Compromiso con el usuario y canales oficiales de atención.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-img">
+          <img src="assets/hero-corporate.jpg" alt="Atelier y Galería KRONOS URBAN">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="marca" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-subtitle">Perfil Institucional</div>
+          <h2 class="section-title" style="margin-bottom: 1.25rem;">IDENTIDAD URBANA CON RIGOR EMPRESARIAL</h2>
+          <p>
+            <strong>KRONOS URBAN</strong> es una persona jurídica constituida legalmente bajo el <strong>NIT 890201988-3</strong>, inscrita ante la <strong>Cámara de Comercio de Bucaramanga</strong> bajo el Registro No. 05-500460-21 con estado de matrícula activo.
+          </p>
+          <p>
+            Con domicilio principal ubicado en la Carrera 12 No. 9-44 en el municipio de San Gil, Santander, nuestra firma orienta su actividad al desarrollo de vestuario urbano contemporáneo. Creemos en prendas diseñadas para trascender modas pasajeras: calces modernos, telas pesadas de tacto prémium y costuras de alta resistencia.
+          </p>
+          <p>
+            Operamos bajo estricto cumplimiento de las normativas de protección al consumidor (Ley 1480 de 2011) y la Ley 1581 de 2012 de Tratamiento de Datos Personales, garantizando seriedad y respaldo institucional a cada comprador y aliado.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar-box">
+              <h4>🎯 Nuestra Misión</h4>
+              <p>Diseñar y confeccionar indumentaria urbana de vanguardia que otorgue carácter y durabilidad, respaldada por un servicio comercial transparente.</p>
+            </div>
+            <div class="pillar-box">
+              <h4>👁️ Nuestra Visión</h4>
+              <p>Posicionarnos como un referente nacional de streetwear y moda contemporánea en Colombia, reconocidos por nuestra solidez técnica y autenticidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="hero-card-img">
+            <img src="assets/craft-tailoring.jpg" alt="Patronaje y Confección de Precisión KRONOS URBAN">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars Section -->
+  <section id="pilares">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Nuestros Fundamentos</div>
+        <h2 class="section-title">LOS PRINCIPIOS DE KRONOS URBAN</h2>
+        <p class="section-desc">Estructuramos nuestras operaciones sobre pilares de excelencia en diseño, legalidad y atención al cliente.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-circle">🧵</div>
+          <h3>Excelencia en Confección</h3>
+          <p>Prendas elaboradas con hilaturas seleccionadas y acabados reforzados que resisten el uso intensivo sin perder su estructura.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-circle">⚖️</div>
+          <h3>Solidez Jurídica</h3>
+          <p>Entidad registrada formalmente en Santander con cumplimiento al día en obligaciones mercantiles y fiscales.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-circle">🚚</div>
+          <h3>Distribución y Acompañamiento</h3>
+          <p>Alianzas con transportadoras líderes de Colombia para despachos seguros, trazables y atención personalizada continua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal & Corporate Transparency Box -->
+  <div class="container" id="respaldo">
+    <div class="section-legal-card">
+      <div class="legal-grid">
+        <div>
+          <span class="legal-badge">🛡️ ENTIDAD VERIFICADA ANTE CÁMARA DE COMERCIO</span>
+          <h3 class="brand-font" style="font-size: 1.6rem; color: #fff; margin-bottom: 0.75rem;">
+            KRONOS URBAN
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Información legal oficial registrada ante la Cámara de Comercio de Bucaramanga y disponible para consulta pública y auditoría corporativa.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <a href="politica-de-privacidad.html" style="color: var(--accent-gold); font-weight: 700; font-size: 0.85rem; text-decoration: underline;">
+              Consultar Política de Tratamiento de Datos Personales →
+            </a>
+          </div>
+        </div>
+
+        <div class="legal-data-grid">
+          <div class="data-item">
+            <span class="label">Razón Social Oficial</span>
+            <span class="value">KRONOS URBAN</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Número de Identificación Tributaria (NIT)</span>
+            <span class="value">890201988-3</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Registro Mercantil</span>
+            <span class="value">05-500460-21 (Cámara de Comercio de Bucaramanga)</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Estado Matrícula</span>
+            <span class="value">ACTIVO (Renovación 2026)</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Dirección Principal</span>
+            <span class="value">CR. 12 NO. 9-44</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Municipio y Departamento</span>
+            <span class="value">San Gil - Santander, Colombia</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Código Postal Oficial</span>
+            <span class="value">684031</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Correo Electrónico Oficial</span>
+            <span class="value">contacto@kronosurban.site</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Teléfono de Notificaciones & Soporte</span>
+            <span class="value">+57 310 824 0597</span>
+          </div>
+          <div class="data-item">
+            <span class="label">Portal Web Verificado</span>
+            <span class="value">https://kronosurban.site</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contacto" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Canales Institucionales</div>
+        <h2 class="section-title">CANALES DE ATENCIÓN DIRECTA</h2>
+        <p class="section-desc">Ponte en contacto con nuestro equipo de atención para cualquier consulta o solicitud.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4 style="color: #fff; font-size: 1.15rem;">Sede Principal & Medios</h4>
+          
+          <div class="contact-info-row">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong style="color: #fff; font-size: 0.9rem;">Dirección Física:</strong>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">CR. 12 NO. 9-44, San Gil - Santander, Colombia (C.P. 684031)</p>
+            </div>
+          </div>
+
+          <div class="contact-info-row">
+            <div class="contact-icon">📱</div>
+            <div>
+              <strong style="color: #fff; font-size: 0.9rem;">Línea Telefónica & WhatsApp:</strong>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">+57 310 824 0597 (Lunes a Viernes de 8:00 AM a 6:00 PM / Sábados 8:00 AM a 1:00 PM)</p>
+            </div>
+          </div>
+
+          <div class="contact-info-row">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong style="color: #fff; font-size: 0.9rem;">Correo Electrónico Oficial:</strong>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">contacto@kronosurban.site</p>
+            </div>
+          </div>
+
+          <div class="contact-info-row">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <strong style="color: #fff; font-size: 0.9rem;">Portal Web:</strong>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">https://kronosurban.site</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card" style="justify-content: center; text-align: center; align-items: center; padding: 3rem 2rem;">
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">💬</div>
+          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 0.75rem;">Atención Inmediata por WhatsApp</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 420px; margin-bottom: 2rem;">
+            Chatea con un asesor corporativo para orientarte en referencias textiles, gestión comercial o resolver dudas de manera directa.
+          </p>
+          <a href="https://wa.me/573108240597?text=Hola%20KRONOS%20URBAN,%20deseo%20comunicarme%20con%20ustedes." class="btn-primary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; padding: 1.1rem 2.2rem;">
+            Iniciar Conversación por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <img src="assets/logo-brand.jpg" alt="Logo KRONOS URBAN" style="width: 38px; height: 38px;">
+            <div>KRONOS<span>URBAN</span></div>
+          </div>
+          <p style="font-size: 0.82rem; line-height: 1.6; color: var(--text-muted);">
+            Entidad comercial registrada en San Gil, Santander. Diseño, moda urbana contemporánea y confección de alto estándar en Colombia.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.78rem; color: #94a3b8;">
+            Razón Social: <strong>KRONOS URBAN</strong><br>
+            NIT: 890201988-3 · San Gil - Santander, Colombia.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegación Institucional</h5>
+          <ul class="footer-links">
+            <li><a href="#marca">Nuestra Marca</a></li>
+            <li><a href="#confeccion">Ingeniería Textil</a></li>
+            <li><a href="#pilares">Pilares Corporativos</a></li>
+            <li><a href="#respaldo">Respaldo Mercantil</a></li>
+            <li><a href="#contacto">Canales de Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Políticas & Cumplimiento</h5>
+          <ul class="footer-links">
+            <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+            <li><a href="terminos-y-condiciones.html">Términos y Condiciones</a></li>
+            <li><a href="terminos-y-condiciones.html#notificaciones">Notificaciones Judiciales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sede Principal</h5>
+          <ul class="footer-links">
+            <li>📍 CR. 12 NO. 9-44, San Gil - Santander</li>
+            <li>📱 +57 310 824 0597</li>
+            <li>✉️ contacto@kronosurban.site</li>
+            <li>🌐 https://kronosurban.site</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>KRONOS URBAN</strong> (NIT 890201988-3). Todos los derechos reservados.
+        </div>
+        <div>
+          Cámara de Comercio de Bucaramanga · Registro 05-500460-21
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/573108240597?text=Hola%20KRONOS%20URBAN,%20deseo%20comunicarme%20con%20un%20asesor." class="floating-wa-btn" target="_blank" rel="noopener noreferrer" title="Atención por WhatsApp">
+    💬
+  </a>
+
+</body>
+</html>
